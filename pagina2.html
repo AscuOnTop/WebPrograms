@@ -4,11 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+    .encabezado-principal {
+    background-color: #c084fc; /* mismo lila que musicales */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        max-width: 800px; 
+        margin: 0 auto;   
+        padding: 20px;
+    }
+
+    article {
+        background-color: #ffffff;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: justify; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    article header {
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+    .musicales header { background-color: #c084fc; }
+    .deportes header { background-color: #c084fc; }  
+    .videojuegos header { background-color: #c084fc; } 
+    .anime header { background-color: #c084fc; } 
+    
+    article header * {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+    article img {
+        display: block;
+        margin: 10px auto; 
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #222;
+        color: #fff;
+        margin-top: 20px;
+    }
+</style>
 </head>
 <body>
+    <header class="encabezado-principal">
+        <h1>MIS GUSTOS</h1>
+        <h2>Braian de Jesus Rios Vega</h2>
+    </header>
     <main>
-        <h1>MIS GUSTOS BRAIAN DE JESUS RIOS VEGA</h1>
-        <article>
+        <article class="musicales">
             <header>
                 <h2>MUSICALES</h2>
             </header>
@@ -18,7 +88,7 @@
             </p>
             <img src="ASSETS/MUSICA.jpg" width="300" alt="Musica">
         </article>
-        <article>
+        <article class="deportes"><
             <header>
                 <h3>DEPORTES</h3>
             </header>
@@ -28,7 +98,7 @@
             </p>
             <img src="ASSETS/CRISTIANORONALDO.jpg" width="300" alt="CR7">
         </article>
-        <article>
+        <article class="videojuegos">
             <header>
                 <h4>VIDEOJUEGOS</h4>
             </header>
@@ -38,7 +108,7 @@
             </p>
             <img src="ASSETS/VIDEOJEUGOS.jpg" width="300" alt="VIDEOJUEGOS">
         </article>
-        <article>
+        <article class="anime">
             <header>
                 <h5>ANIME</h5>
             </header>
@@ -51,8 +121,8 @@
     </main>
     <footer>
         <address>
-            <p>Desarrollado por BRAIAN DE JESUS RIOS VEGA</p>
-            <P>SAN NICOLAS DE LOS GARZA NL</P>
+            <p>Desarrollado por Braian de Jesus Rios Vega</p>
+            <P>San Nicolas de los Garza NL</P>
         </address>
     </footer>
 </body>
